@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<link rel="stylesheet" href="./static/style.css">
+	</head>
+
+	<body class="header-collapse">
+			<div class="hero">
+				<div class="slider">
+					<ul class="slides">
+						<li class="lazy-bg" data-background="./static/dummy/slide-1.jpg">
+							<div class="container">							
+								<form action='/predict' method="POST" name="myform" >
+									<h2 class="slide-title">Email Classifier</h2> <br><br>
+									<input   id="email" name='email' type="text" class="slide-subtitle" placeholder = "Enter your mail to classify"> <br><br>
+									<h3 class="slide-desc">Email- {{email_text}} </br><br> Result- {{pred}}</p></br>
+									<button type="submit" class="button cut-corner">Predict</Button>
+								</form>							
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<script src="./static/js/jquery-1.11.1.min.js"></script>		
+		<script src="./static/js/plugins.js"></script>
+		<script src="./static/js/app.js"></script>
+		
+	</body>
+
+</html>
